@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
@@ -6,8 +10,7 @@ header {
     background: #007765;
     width: 100%;
     display: grid;
-    grid: 5vh / 60% auto;
-    position: sticky;
+    grid: 84px / 60% auto;
     top: 0;
 }
 
@@ -17,22 +20,22 @@ header {
     place-self: center;
 }
 
-.logo > img {
-    height: 4vh;
-}
-
 .logo + div {
     grid-row: 1;
     grid-column: 2;
     place-self: center left;
     color: #fff;
-    font-size: medium;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
 }
 
-header span:hover {
-    color: blueviolet;
-    cursor: pointer;
+a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+a:hover {
+    text-decoration: underline;
 }
 container {
     display: grid;
@@ -40,7 +43,7 @@ container {
     background: green;
 }
 
-#piperwall {
+#pipernet {
     grid-row: 1;
     grid-column: 1;
     background-image: url(img/image.png);
@@ -48,9 +51,9 @@ container {
     justify-content: center;
 }
 
-#piperwall > p {
+#pipernet > p {
     color: #fff;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 5rem;
     align-self: center;
     cursor: default;
@@ -81,20 +84,15 @@ container {
     flex-direction: column;
 }
 
-#theproblem > ol {
-    align-self: center;
-}
-
 .inside-block {
-    padding-right: 20%;
-    padding-left: 20%;
+    align-self: center;
     margin: 0;
 }
 ul {
     list-style-type: none;
 }
 .p-text {
-    font-size: 2rem;
+    font-size: 32px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -106,20 +104,19 @@ img[alt="Hero1"] {
 .flex {
     display: flex;
 }
-
+div.inside-block.flex {
+    margin-top: 2vh;
+}
 img[alt="PPC Logo"] {
     width: 115px;
     height: 115px;;
 }
 
 img[alt="PPC Logo"] + p {
-    padding-left: 4rem;
+    padding-left: 2rem;
     margin-block-start: 0;
     margin-block-end: 0;
-}
-
-#intro .inside-block {
-    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 wrapper {
@@ -134,7 +131,9 @@ h4 {
     font-style: italic;
 }
 
-section {
+section.flex {
+    padding-left: 20vw;
+    padding-right: 20vw;
     flex-flow: row wrap;
     justify-content: space-between;
 }
