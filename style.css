@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: #007765;
+    width: 100%;
+    display: grid;
+    grid: 5vh / 60% auto;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    grid-row: 1;
+    grid-column: 1;
+    place-self: center;
+}
+
+.logo > img {
+    height: 4vh;
+}
+
+.logo + div {
+    grid-row: 1;
+    grid-column: 2;
+    place-self: center left;
+    color: #fff;
+    font-size: medium;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+header span:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+container {
+    display: grid;
+    grid: 403px 719px 483px 604px / 100%;
+    background: green;
+}
+
+#piperwall {
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url(img/image.png);
+    display: flex;
+    justify-content: center;
+}
+
+#piperwall > p {
+    color: #fff;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 5rem;
+    align-self: center;
+    cursor: default;
+}
+
+.p-f-l {
+    font-size: 64px;
+    color:  #007765;
+    font-family: 'Roboto', sans-serif;
+    margin: 2%;
+    align-self: center;
+    padding-top: 2%;
+}
+.whitewall {
+    background: #eee;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#theproblem > ol {
+    align-self: center;
+}
+
+.inside-block {
+    padding-right: 15%;
+    padding-left: 15%;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+}
+.p-text {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+img[alt="Hero1"] {
+    width: 100%;
+}
+
+#intro.whitewall > div {
+    display: flex;
+}
+
+.inside-block img[alt="PPC Logo"] + p {
+    padding-left: 4rem;
+}
+
+#intro .inside-block {
+    margin-top: 1rem;
+}
