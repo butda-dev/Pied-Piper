@@ -105,7 +105,7 @@ container {
 }
 
 .p-text {
-  font-size: 32px;
+  font-size: 2em;
   font-family: 'Roboto', "Arial", sans-serif;
 }
 
@@ -173,4 +173,14 @@ footer > p {
   font-family: 'Roboto', "Arial", sans-serif;
 
   color: #ffffff;
+}
+
+@media screen and (max-width: 1129px) {
+  .p-text {
+    font-size: 1.65em;
+  }
+
+  .white-wall {
+    height: 60vh;
+  }
 }
