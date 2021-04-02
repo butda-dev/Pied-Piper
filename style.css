@@ -4,30 +4,33 @@ html {
 
 body {
   margin: 0;
-  min-width: 960px;
 }
 
 header {
   top: 0;
 
   width: 100%;
-  display: grid;
-  grid: 84px / 60% auto;
+  height: 68px;
+  padding-top: 1rem;
 
   background: #007765;
 }
 
-.logo {
-  grid-row: 1;
-  grid-column: 1;
-
-  place-self: center;
+.center-block {
+  height: 100%;
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 0 5em;
 }
 
-.logo + div {
-  grid-row: 1;
-  grid-column: 2;
-  place-self: center left;
+.center-block > img {
+  float: left;
+  width: 184px;
+}
+
+nav {
+  float: right;
+  padding-top: 10px;
 
   font-size: 21px;
   font-family: 'Roboto', "Arial", sans-serif;
@@ -191,5 +194,14 @@ footer > p {
 
   section.flex {
     padding: 0 54px;
+  }
+
+  .center-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    padding-top: 0;
   }
 }
