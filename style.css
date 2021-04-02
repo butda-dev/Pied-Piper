@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0;
+  min-width: 960px;
 }
 
 header {
@@ -150,12 +151,11 @@ h4 {
 section.flex {
   flex-flow: row wrap;
   justify-content: space-between;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding: 0 20vw;
 }
 
 wrapper > section > div {
-  flex-basis: 33%;
+  flex: 0 1 33%;
   margin-top: 4rem;
 }
 
@@ -182,10 +182,14 @@ footer > p {
   }
 
   .white-wall {
-    height: 62vh;
+    height: 600px;
   }
 
   container {
-    grid: 403px 62vh 483px 53vh 845px/ 100%;
+    grid: 403px 600px 483px 500px 845px/ 100%; 
+  }
+
+  section.flex {
+    padding: 0 54px;
   }
 }
