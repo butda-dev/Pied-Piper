@@ -1,323 +1,255 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   margin: 0;
   min-width: 275px;
 }
-
-header {
+.header {
   top: 0;
-
   width: 100%;
   height: 68px;
   padding-top: 1rem;
-
   background: #007765;
 }
-
-.center-block {
+.header__center-block {
   height: 100%;
   max-width: 60em;
   margin: 0 auto;
   padding: 0 5em;
 }
-
-.center-block div img {
+.header__logo {
   float: left;
   width: 184px;
 }
-
-nav {
+.header__nav {
   float: right;
   padding-top: 10px;
-
   font-size: 21px;
   font-family: 'Roboto', "Arial", sans-serif;
-
   color: #fff;
 }
-
-a {
+.span__link {
   text-decoration: none;
-  
   color: #fff;
 }
-
-a:hover {
+.span__link:hover {
   text-decoration: underline;
 }
-container {
+.container {
   display: grid;
-  grid: 403px 719px 483px 604px 845px/ 100%;
-
+  grid: 403px 719px 483px 604px 845px/100%;
   background: green;
 }
-
-#piper-net {
+.container__piper-net {
   grid-row: 1;
   grid-column: 1;
   display: flex;
   justify-content: center;
-
   background-image: url(img/image-8.png);
   background-size: 100%;
 }
-
-#piper-net > p {
+.container__title {
   align-self: center;
-
   font-family: 'Roboto', "Arial", sans-serif;
   font-size: 5rem;
   cursor: default;
   padding: 0 10px;
   text-align: center;
-
   color: #fff;
 }
-
-.p-f-l {
-  align-self: center;
-  margin: 0px;
-  padding-top: 2%;
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/image-9.png);
+  background-size: 100%;
+}
+.hero__title {
   text-align: center;
-
-  font-size: 64px;
+  font-size: 3em;
   font-family: 'Roboto', "Arial", sans-serif;
-
-  color:  #007765;
+  font-style: italic;
+  color: #fff;
 }
-
-.p-s-l {
-  align-self: center;
-  margin: 0px;
-  padding-top: 2%;
-
-  font-size: 24px;
-  font-family: 'Roboto', "Arial", sans-serif;
-  
-  color:  #007765;
-}
-
 .white-wall {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   padding: 0 15px;
-
   background: #fff;
 }
-
+.white-wall__title {
+  margin: 0px;
+  padding-top: 2%;
+}
+.white-wall__inside-block {
+  margin-top: 2vh;
+}
 .inside-block {
   align-self: center;
-  margin: 0;
 }
-
-.p-text {
+.inside-block-display-flex {
+  display: flex;
+}
+.inside-block__text {
   font-size: 2em;
   font-family: 'Roboto', "Arial", sans-serif;
 }
-
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-image: url(img/image-9.png);
-  background-size: 100%;
-}
-
-.hero > p {
-  text-align: center;
-
-  font-size: 3em;
-  font-family: 'Roboto', "Arial", sans-serif;
-  font-style: italic;
-
-  color: #fff;
-}
-
-.flex {
-  display: flex;
-}
-div.inside-block.flex {
-  margin-top: 2vh;
-}
-img[alt="PPC Logo"] {
-  width: 115px;
-  height: 115px;;
-}
-
-img[alt="PPC Logo"] + p {
+.inside-block__text_offset_m {
   padding-left: 2rem;
   margin-block-start: 0;
   margin-block-end: 0;
   margin-bottom: 1rem;
 }
-
-wrapper {
+.inside-block__logo {
+  width: 115px;
+  height: 115px;
+}
+.wrapper {
   text-align: center;
-
   background: #eee;
 }
-
-h4 {
-  margin: 0;
-
-  font-family: 'Roboto', "Arial", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-section.flex {
+.wrapper__team {
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 0 20vw;
 }
-
-wrapper > section > div {
+.wrapper__team_display_flex {
+  display: flex;
+}
+.wrapper__title {
+  margin: 0;
+  padding-top: 2%;
+}
+.title {
+  align-self: center;
+  text-align: center;
+  font-size: 64px;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #007765;
+}
+.member {
   flex: 0 1 33%;
   margin-top: 4rem;
 }
-
-footer {
+.member__name,
+.member__role {
+  margin: 0;
+  font-family: 'Roboto', "Arial", sans-serif;
+}
+.member__name {
+  align-self: center;
+  padding-top: 2%;
+  font-size: 24px;
+  color: #007765;
+}
+.member__role {
+  font-weight: 400;
+  font-style: italic;
+}
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 176px;
-
   background: #333;
 }
-
-footer > p {
+.footer__text {
   padding: 0 10px;
-
   font-size: 18px;
   font-family: 'Roboto', "Arial", sans-serif;
-
   color: #fff;
 }
-
 @media screen and (max-width: 1170px) {
-
-  .p-text {
+  .inside-block__text {
     font-size: 1.3em;
   }
-
   .white-wall {
     height: 600px;
   }
-
-  container {
-    grid: 200px 500px 200px 600px 700px/ 100%; 
+  .container {
+    grid: 200px 450px 200px 400px 700px/100%;
   }
-
-  section.flex {
+  .container__title {
+    font-size: 3.5em;
+  }
+  .wrapper__team {
     padding: 0 54px;
   }
-
-  .center-block {
+  .header {
+    padding-top: 0.5rem;
+  }
+  .header__logo {
+    width: 150px;
+  }
+  .header__nav {
+    padding-top: 5px;
+    font-size: 18px;
+  }
+  .header__center-block,
+  .header__logo-box {
     display: flex;
+  }
+  .header__center-block {
     flex-direction: column;
     text-align: center;
     padding: 0 5px;
   }
-
-  nav {
-    padding-top: 5px;
-    font-size: 18px;
-  }
-
-  .center-block div img {
-    width: 150px;
-  }
-
-  header {
-    padding-top: .5rem;
-  }
-
-  .center-block div {
-    display: flex;
+  .header__logo-box {
     justify-content: center;
   }
-
-  .p-f-l {
+  .title {
     font-size: 44px;
   }
-
-  #piper-net > p {
-    font-size: 3.5em;
-  }
-
-  .hero > p {
+  .hero__title {
     font-size: 1.5em;
   }
-
 }
-
 @media screen and (max-width: 800px) {
-
-  container {
-    grid: 150px 400px 160px 400px 1050px/ 100%; 
-  }
-
-  .p-text {
+  .inside-block__text {
     font-size: 1em;
   }
-
-  wrapper > section > div {
+  .container {
+    grid: 150px 400px 160px 400px 1050px/100%;
+  }
+  .member {
     flex: 0 1 45%;
   }
-
-  footer > p {
+  .footer__text {
     font-size: 14px;
   }
-
 }
-
 @media screen and (max-width: 561px) {
-
-  .p-text {
-    font-size: .86em;
+  .inside-block__text {
+    font-size: 0.86em;
   }
-
-  container {
-    grid: 150px 400px 160px 500px 1580px/ 100%; 
+  .container {
+    grid: 150px 400px 160px 500px 1580px/100%;
   }
-
-  .hero > p {
-    font-size: 1em;
-  }
-
-  #piper-net > p {
+  .container__title {
     font-size: 2em;
   }
-
-  nav {
+  .hero__title {
+    font-size: 1em;
+  }
+  .header__nav {
     float: right;
     padding-top: 10px;
-  
     font-size: 15px;
   }
-
-  wrapper > section > div {
+  .member {
     flex: 0 1 55%;
     margin-top: 1rem;
   }
-
-  section.flex {
+  .wrapper__team {
     justify-content: center;
   }
-
-  footer > p {
+  .footer__text {
     font-size: 10px;
   }
-
-  .p-f-l {
+  .title {
     font-size: 36px;
   }
-
 }
-
