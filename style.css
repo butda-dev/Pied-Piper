@@ -26,7 +26,7 @@ body {
   float: right;
   padding-top: 10px;
   font-size: 21px;
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   color: #fff;
 }
 .span__link {
@@ -51,7 +51,7 @@ body {
 }
 .container__title {
   align-self: center;
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 5rem;
   cursor: default;
   padding: 0 10px;
@@ -68,7 +68,7 @@ body {
 .hero__title {
   text-align: center;
   font-size: 3em;
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-style: italic;
   color: #fff;
 }
@@ -94,7 +94,7 @@ body {
 }
 .inside-block__text {
   font-size: 2em;
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 .inside-block__text_offset_m {
   padding-left: 2rem;
@@ -136,7 +136,7 @@ body {
 .member__name,
 .member__role {
   margin: 0;
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 .member__name {
   align-self: center;
@@ -159,7 +159,7 @@ body {
 .footer__text {
   padding: 0 10px;
   font-size: 18px;
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   color: #fff;
 }
 @media screen and (max-width: 1170px) {
