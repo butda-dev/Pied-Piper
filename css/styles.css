@@ -22,9 +22,29 @@ body {
   padding: 0 5em;
 }
 
+@media screen and (max-width: 1170px) {
+  .header__center-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 0 5px;
+  }
+}
+
 .header__logo {
   float: left;
   width: 184px;
+}
+
+@media screen and (max-width: 1170px) {
+  .header__logo {
+    width: 150px;
+  }
 }
 
 .header__nav {
@@ -33,6 +53,38 @@ body {
   font-size: 21px;
   font-family: "Roboto", Arial, sans-serif;
   color: #fff;
+}
+
+@media screen and (max-width: 1170px) {
+  .header__nav {
+    padding-top: 5px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .header__nav {
+    float: right;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .header__logo-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .header {
+    padding-top: 0.5rem;
+  }
 }
 
 .span__link {
@@ -78,6 +130,36 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 1170px) {
+  .container__title {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .container__title {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    grid: 200px 450px 200px 400px 700px/ 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid: 150px 400px 160px 400px 1050px/ 100%;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .container {
+    grid: 150px 400px 160px 500px 1580px/ 100%;
+  }
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,6 +180,18 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-style: italic;
   color: #fff;
+}
+
+@media screen and (max-width: 1170px) {
+  .hero__title {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .hero__title {
+    font-size: 1em;
+  }
 }
 
 .white-wall {
@@ -124,16 +218,16 @@ body {
   margin-top: 2vh;
 }
 
+@media screen and (max-width: 1170px) {
+  .white-wall {
+    height: 600px;
+  }
+}
+
 .inside-block {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.inside-block-display-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .inside-block__text {
@@ -141,7 +235,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
 }
 
-.inside-block__text_offset_m {
+.inside-block__text_offset {
   padding-left: 2rem;
   -webkit-margin-before: 0;
           margin-block-start: 0;
@@ -150,9 +244,33 @@ body {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 1170px) {
+  .inside-block__text {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .inside-block__text {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .inside-block__text {
+    font-size: 0.86em;
+  }
+}
+
 .inside-block__logo {
   width: 115px;
   height: 115px;
+}
+
+.inside-block_display_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .wrapper {
@@ -177,6 +295,20 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 1170px) {
+  .wrapper__team {
+    padding: 0 54px;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .wrapper__team {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .wrapper__title {
   margin: 0;
   padding-top: 2%;
@@ -190,6 +322,18 @@ body {
   font-size: 64px;
   font-family: "Roboto", Arial, sans-serif;
   color: #007765;
+}
+
+@media screen and (max-width: 1170px) {
+  .title {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .title {
+    font-size: 36px;
+  }
 }
 
 .member {
@@ -218,6 +362,23 @@ body {
   font-style: italic;
 }
 
+@media screen and (max-width: 800px) {
+  .member {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .member {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 55%;
+            flex: 0 1 55%;
+    margin-top: 1rem;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,108 +401,14 @@ body {
   color: #fff;
 }
 
-@media screen and (max-width: 1170px) {
-  .inside-block__text {
-    font-size: 1.3em;
-  }
-  .white-wall {
-    height: 600px;
-  }
-  .container {
-    grid: 200px 450px 200px 400px 700px/ 100%;
-  }
-  .container__title {
-    font-size: 3.5em;
-  }
-  .wrapper__team {
-    padding: 0 54px;
-  }
-  .header {
-    padding-top: .5rem;
-  }
-  .header__logo {
-    width: 150px;
-  }
-  .header__nav {
-    padding-top: 5px;
-    font-size: 18px;
-  }
-  .header__center-block, .header__logo-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .header__center-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    padding: 0 5px;
-  }
-  .header__logo-box {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .title {
-    font-size: 44px;
-  }
-  .hero__title {
-    font-size: 1.5em;
-  }
-}
-
 @media screen and (max-width: 800px) {
-  .inside-block__text {
-    font-size: 1em;
-  }
-  .container {
-    grid: 150px 400px 160px 400px 1050px/ 100%;
-  }
-  .member {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 45%;
-            flex: 0 1 45%;
-  }
   .footer__text {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 561px) {
-  .inside-block__text {
-    font-size: .86em;
-  }
-  .container {
-    grid: 150px 400px 160px 500px 1580px/ 100%;
-  }
-  .container__title {
-    font-size: 2em;
-  }
-  .hero__title {
-    font-size: 1em;
-  }
-  .header__nav {
-    float: right;
-    padding-top: 10px;
-    font-size: 15px;
-  }
-  .member {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 55%;
-            flex: 0 1 55%;
-    margin-top: 1rem;
-  }
-  .wrapper__team {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .footer__text {
     font-size: 10px;
-  }
-  .title {
-    font-size: 36px;
   }
 }

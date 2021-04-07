@@ -1,5 +1,5 @@
-$font-family: 'Roboto', Arial, sans-serif;
- 
+$font-family: "Roboto", Arial, sans-serif;
+
 $screen-sm: 275px;
 $screen-md: 561px;
 $screen-lg: 800px;
@@ -16,11 +16,9 @@ body {
 
 .header {
   top: 0;
-
   width: 100%;
   height: 68px;
   padding-top: 1rem;
-
   background: #007765;
 
   &__center-block {
@@ -28,28 +26,58 @@ body {
     max-width: 60em;
     margin: 0 auto;
     padding: 0 5em;
+
+    @media screen and (max-width: $screen-xl) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 5px;
+    }
   }
 
   &__logo {
     float: left;
     width: 184px;
+
+    @media screen and (max-width: $screen-xl) {
+      width: 150px;
+    }
   }
 
   &__nav {
     float: right;
     padding-top: 10px;
-  
     font-size: 21px;
     font-family: $font-family;
-  
     color: #fff;
+
+    @media screen and (max-width: $screen-xl) {
+      padding-top: 5px;
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      float: right;
+      padding-top: 10px;
+      font-size: 15px;
+    }
+  }
+
+  &__logo-box {
+    @media screen and (max-width: $screen-xl) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: $screen-xl) {
+    padding-top: 0.5rem;
   }
 }
 
 .span {
   &__link {
     text-decoration: none;
-    
     color: #fff;
 
     &:hover {
@@ -61,7 +89,6 @@ body {
 .container {
   display: grid;
   grid: 403px 719px 483px 604px 845px/ 100%;
-
   background: green;
 
   &__piper-net {
@@ -69,21 +96,38 @@ body {
     grid-column: 1;
     display: flex;
     justify-content: center;
-  
     background-image: url(../img/image-8.png);
     background-size: 100%;
   }
 
   &__title {
     align-self: center;
-  
     font-family: $font-family;
     font-size: 5rem;
     cursor: default;
     padding: 0 10px;
     text-align: center;
-  
     color: #fff;
+
+    @media screen and (max-width: $screen-xl) {
+      font-size: 3.5em;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      font-size: 2em;
+    }
+  }
+
+  @media screen and (max-width: $screen-xl) {
+    grid: 200px 450px 200px 400px 700px/ 100%;
+  }
+
+  @media screen and (max-width: $screen-lg) {
+    grid: 150px 400px 160px 400px 1050px/ 100%;
+  }
+
+  @media screen and (max-width: $screen-md) {
+    grid: 150px 400px 160px 500px 1580px/ 100%;
   }
 }
 
@@ -91,18 +135,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-image: url(../img/image-9.png);
   background-size: 100%;
 
   &__title {
     text-align: center;
-  
     font-size: 3em;
     font-family: $font-family;
     font-style: italic;
-  
     color: #fff;
+
+    @media screen and (max-width: $screen-xl) {
+      font-size: 1.5em;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      font-size: 1em;
+    }
   }
 }
 
@@ -111,7 +160,6 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   padding: 0 15px;
-
   background: #fff;
 
   &__title {
@@ -122,24 +170,36 @@ body {
   &__inside-block {
     margin-top: 2vh;
   }
+
+  @media screen and (max-width: $screen-xl) {
+    height: 600px;
+  }
 }
 
 .inside-block {
   align-self: center;
 
-  &-display-flex {
-    display: flex;
-  }
-
   &__text {
     font-size: 2em;
     font-family: $font-family;
 
-    &_offset_m {
+    &_offset {
       padding-left: 2rem;
       margin-block-start: 0;
       margin-block-end: 0;
       margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: $screen-xl) {
+      font-size: 1.3em;
+    }
+
+    @media screen and (max-width: $screen-lg) {
+      font-size: 1em;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      font-size: 0.86em;
     }
   }
 
@@ -147,21 +207,32 @@ body {
     width: 115px;
     height: 115px;
   }
+
+  &_display_flex {
+    display: flex;
+  }
 }
 
 .wrapper {
   text-align: center;
-
   background: #eee;
 
   &__team {
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 0 20vw;
-  }
 
-  &__team_display_flex {
-    display: flex;
+    &_display_flex {
+      display: flex;
+    }
+
+    @media screen and (max-width: $screen-xl) {
+      padding: 0 54px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      justify-content: center;
+    }
   }
 
   &__title {
@@ -173,11 +244,17 @@ body {
 .title {
   align-self: center;
   text-align: center;
-
   font-size: 64px;
   font-family: $font-family;
-
   color: #007765;
+
+  @media screen and (max-width: $screen-xl) {
+    font-size: 44px;
+  }
+
+  @media screen and (max-width: $screen-md) {
+    font-size: 36px;
+  }
 }
 
 .member {
@@ -187,22 +264,28 @@ body {
   &__name,
   &__role {
     margin: 0;
-
     font-family: $font-family;
   }
 
   &__name {
     align-self: center;
     padding-top: 2%;
-  
     font-size: 24px;
-    
-    color:  #007765;
+    color: #007765;
   }
 
   &__role {
     font-weight: 400;
     font-style: italic;
+  }
+
+  @media screen and (max-width: $screen-lg) {
+    flex: 0 1 45%;
+  }
+
+  @media screen and (max-width: $screen-md) {
+    flex: 0 1 55%;
+    margin-top: 1rem;
   }
 }
 
@@ -212,140 +295,20 @@ body {
   align-items: center;
   width: 100%;
   height: 176px;
-
   background: #333;
 
   &__text {
     padding: 0 10px;
-  
     font-size: 18px;
     font-family: $font-family;
-  
     color: #fff;
+
+    @media screen and (max-width: $screen-lg) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      font-size: 10px;
+    }
   }
 }
-
-@media screen and (max-width: $screen-xl) {
-  
-  .inside-block__text {
-    font-size: 1.3em;
-  }
-
-  .white-wall {
-    height: 600px;
-  }
-
-  .container {
-    grid: 200px 450px 200px 400px 700px/ 100%;
-
-    &__title {
-      font-size: 3.5em;
-    }
-  }
-
-  .wrapper__team {
-    padding: 0 54px;
-  }
-
-  .header {
-    padding-top: .5rem;
-
-    &__logo {
-      width: 150px;
-    }
-
-    &__nav {
-      padding-top: 5px;
-      font-size: 18px;
-    }
-
-    &__center-block,
-    &__logo-box {
-      display: flex;
-    }
-
-    &__center-block {
-      flex-direction: column;
-      text-align: center;
-      padding: 0 5px;
-    }
-
-    &__logo-box {
-      justify-content: center;
-    }
-  }
-
-  .title {
-    font-size: 44px;
-  }
-
-  .hero__title {
-    font-size: 1.5em;
-  }
-
-}
-
-@media screen and (max-width: $screen-lg) {
-
-  .inside-block__text {
-    font-size: 1em;
-  }
-
-  .container {
-    grid: 150px 400px 160px 400px 1050px/ 100%; 
-  }
-
-  .member {
-    flex: 0 1 45%;
-  }
-
-  .footer__text {
-    font-size: 14px;
-  }
-
-}
-
-@media screen and (max-width: $screen-md) {
-
-  .inside-block__text {
-    font-size: .86em;
-  }
-
-  .container {
-    grid: 150px 400px 160px 500px 1580px/ 100%; 
-
-    &__title {
-      font-size: 2em;
-    }
-  }
-
-  .hero__title {
-    font-size: 1em;
-  }
-
-  .header__nav {
-    float: right;
-    padding-top: 10px;
-  
-    font-size: 15px;
-  }
-
-  .member {
-    flex: 0 1 55%;
-    margin-top: 1rem;
-  }
-
-  .wrapper__team {
-    justify-content: center;
-  }
-
-  .footer__text {
-    font-size: 10px;
-  }
-
-  .title {
-    font-size: 36px;
-  }
-
-}
-
